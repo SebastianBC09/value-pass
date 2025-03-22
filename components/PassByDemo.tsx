@@ -154,7 +154,7 @@ const PassByDemo: FC = () => {
                 <h3 className="font-semibold text-blue-800 dark:text-blue-300">Modo Personalizado</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
                   En el modo personalizado, puedes experimentar con tu propio código para entender mejor los conceptos.
-                  Modifica el código a tu gusto y pulsa "Ejecutar" para simular su comportamiento.
+                  Modifica el código a tu gusto y pulsa &quot;Ejecutar&quot; para simular su comportamiento.
                   Ten en cuenta que este es un entorno simulado y no ejecuta realmente el código.
                   Para probar el código real, cópialo y ejecútalo en tu entorno de desarrollo preferido.
                 </p>
