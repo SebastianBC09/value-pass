@@ -31,5 +31,5 @@ print("Después de la función:", swiftUser.name)  // "Jane" (modificado)`,
     refOutput: `Antes de la función: John
 Dentro de la función: Jane
 Después de la función: Jane`,
-    explanation: 'En Swift, los tipos primitivos se pasan por valor y las clases se pasan por referencia.'
+    explanation: 'Swift utiliza tipos por valor (struct, enum, tuplas) y tipos por referencia (class). Los tipos por valor se copian cuando se asignan o pasan a funciones, mientras que las clases se pasan por referencia. Swift introduce "inout" para modificar parámetros por valor dentro de una función afectando al original. También tiene semántica de copia-en-escritura (COW) para tipos como Array, String y Dictionary, que optimiza copiando solo cuando es necesario. El sistema de ARC (Automatic Reference Counting) gestiona la memoria de referencias, y los "weak" y "unowned" references previenen ciclos de retención.'
 };

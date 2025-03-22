@@ -24,5 +24,5 @@ print("Después de la función:", items_list)  # [1, 2, 3, 4] (modificado)`,
     refOutput: `Antes de la función: [1, 2, 3]
 Dentro de la función: [1, 2, 3, 4]
 Después de la función: [1, 2, 3, 4]`,
-    explanation: 'En Python, los tipos inmutables se comportan como si se pasaran por valor, mientras que los objetos mutables se pasan por referencia.'
-  };
+    explanation: 'Python utiliza un modelo de "paso por asignación" donde el comportamiento depende de la mutabilidad del objeto. Los objetos inmutables (int, float, string, tuple, frozenset) se comportan como paso por valor, mientras que los objetos mutables (list, dict, set) se comportan como paso por referencia. Python permite modificar objetos mutables dentro de funciones afectando al original, pero no puede reasignar la referencia externa a menos que use contenedores mutables o patrones específicos como retornar el nuevo valor.'
+};

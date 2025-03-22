@@ -37,5 +37,5 @@ public class Program {
     refOutput: `Antes de la función: John
 Dentro de la función: Jane
 Después de la función: Jane`,
-    explanation: 'En C#, los tipos de valor se pasan por valor y los objetos se pasan por referencia.'
+    explanation: 'C# diferencia claramente entre tipos por valor (struct, tipos primitivos) y tipos por referencia (class). Por defecto, los struct se pasan por valor (copia) y las class por referencia. C# ofrece modificadores explícitos: "ref" fuerza el paso por referencia incluso para tipos por valor, "out" es similar a ref pero no requiere inicialización previa, e "in" permite paso por referencia de solo lectura. Con C# 7+, se introdujeron las ref structs y ref returns para mayor control sobre referencias.'
   };

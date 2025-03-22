@@ -38,5 +38,5 @@ public class Main {
     refOutput: `Antes de la función: John
 Dentro de la función: Jane
 Después de la función: Jane`,
-    explanation: 'En Java, los primitivos se pasan por valor y los objetos se pasan por valor de referencia.'
+    explanation: 'Java pasa los tipos primitivos (byte, short, int, long, float, double, boolean, char) por valor (copia) y los objetos siempre por referencia. A diferencia de C#, Java no ofrece una manera de forzar el paso por referencia para primitivos. Para simular el paso por referencia con primitivos, se utilizan clases contenedoras como Integer o arrays de un solo elemento. Java no tiene modificadores como "ref" o "out" para cambiar el comportamiento de paso de parámetros.'
 };

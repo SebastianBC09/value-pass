@@ -26,5 +26,5 @@ console.log("Después de la función:", userObject); // { username: "Jane" } (mo
     refOutput: `Antes de la función: { username: "John" }
 Dentro de la función: { username: "Jane" }
 Después de la función: { username: "Jane" }`,
-    explanation: 'En JavaScript, los tipos primitivos se pasan por valor, mientras que los objetos se pasan por referencia.'
+    explanation: 'En JavaScript, los tipos primitivos (números, strings, booleanos, null, undefined, Symbol y BigInt) se pasan por valor, creando una copia independiente. Los objetos y arrays se pasan por referencia, por lo que las funciones reciben una referencia al objeto original y cualquier modificación afecta al objeto original. JavaScript no ofrece sintaxis para forzar explícitamente el paso por valor de objetos (requiere técnicas como clonación profunda).'
 };
