@@ -8,6 +8,7 @@ interface AppState {
   customMode: boolean;
   customValueCode: string;
   customRefCode: string;
+  languages: typeof codeExamples;
   setLanguage: (lang: Language) => void;
   setCustomValueCode: (code: string) => void;
   setCustomRefCode: (code: string) => void;
@@ -21,6 +22,7 @@ export const useAppStore = create<AppState>()(
       customMode: false,
       customValueCode: codeExamples['javascript'].valueExample,
       customRefCode: codeExamples['javascript'].referenceExample,
+      languages: codeExamples,
 
       setLanguage: (lang) => {
         set({
@@ -36,6 +38,17 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: 'memory-demo-store',
+      version: 1, // Control de versiones para el estado persistido
+      migrate: (persistedState: unknown, version: number) => {
+        // Migración para versiones anteriores
+        if (version === 0) {
+          return {
+            ...(persistedState as Partial<AppState>),
+            languages: codeExamples, // Añade la propiedad que faltaba
+          } as AppState;
+        }
+        return persistedState as AppState;
+      },
     }
   )
 );
